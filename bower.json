@@ -20,6 +20,6 @@
     "jquery-migrate": "~1.2.1",
     "requirejs": "~2.1.15",
     "domready": "~1.0.7",
-    "zepto": "~1.1.4"
+    "zepto-full": "~1.1.2"
   }
 }

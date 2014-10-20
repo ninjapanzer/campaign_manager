@@ -4,10 +4,10 @@ requirejs.config({
     "domready"      : "components/domready/ready.min",
     "underscore"    : "components/underscore/underscore-min",
     "react"         : "components/react/react",
-    "zepto"         : "components/zepto/zepto.min"
+    "jquery"        : "components/jquery/dist/jquery.min"
   },
   "shim": {
-    "zepto": {
+    "jquery": {
       "exports": '$'
     },
   }
