@@ -1,0 +1,25 @@
+{
+  "name": "campaign_manager",
+  "version": "0.0.0",
+  "authors": [
+    "Paul Scarrone"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.11.2",
+    "underscore": "~1.7.0",
+    "jquery": "~2.1.1",
+    "jquery-migrate": "~1.2.1",
+    "requirejs": "~2.1.15",
+    "domready": "~1.0.7",
+    "zepto": "~1.1.4"
+  }
+}
