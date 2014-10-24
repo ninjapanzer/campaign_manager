@@ -6,7 +6,11 @@
 */
 
 module.exports = {
-
+  schema: true,
+  migrate: 'safe',
+  autoCreatedAt: true,
+  autoUpdatedAt: true,
+  autoPK: false,
   attributes: {
     name: { type: 'string' },
     content: { type: 'string' }

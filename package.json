@@ -25,7 +25,10 @@
     "grunt-contrib-coffee": "~0.10.1",
     "sails-generate-controller": "^0.10.7",
     "sails-generate-model": "^0.10.9",
-    "gake": "^0.1.2"
+    "sails-postgresql": "^0.10.9",
+    "db-migrate": "^0.7.1",
+    "sails-db-migrate": "^0.2.2",
+    "pg": "^3.6.2"
   },
   "scripts": {
     "start": "node app.js",

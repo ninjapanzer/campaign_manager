@@ -1,14 +1,23 @@
-/** @jsx React.DOM */
-define(["domready", "underscore", "react", "jquery"], function(DOMReady, _, React, $) {
+define([
+  "domready",
+  "underscore",
+  "react",
+  "jquery",
+  "js/templates/main",
+  "js/templates/campaigns"
+  ], function(DOMReady, _, React, $, MainTemplate, CampaignsTemplate) {
 
   var main = function(){
     React.renderComponent(
-      <h1>Hello, world! <Campaigns /></h1>,
+      MainTemplate.main({campaigns: Campaigns}),
       document.body
     );
-  }
+  };
 
   var Campaigns = React.createClass({
+    getInitialState: function() {
+      return {data: []};
+    },
     componentDidMount: function() {
       this.props.main = main;
       this.props.url = window.location.protocol + '//' + window.location.host + '/campaigns';
@@ -24,9 +33,7 @@ define(["domready", "underscore", "react", "jquery"], function(DOMReady, _, Reac
       }).done(this.props.main());
     },
     render: function() {
-      return (
-        <h1>wow</h1>
-      );
+      return CampaignsTemplate.campaigns({data: this.state.data});
     }
   });
 
