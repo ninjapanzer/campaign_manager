@@ -14,4 +14,4 @@ requirejs.config({
 
 });
 
-requirejs(['js/main']);
+requirejs(['js/main', 'js/components/campaignEdit']);
